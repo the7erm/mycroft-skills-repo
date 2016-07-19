@@ -1,0 +1,28 @@
+---
+layout: page
+title: Skills
+permalink: /skills/
+---
+<p> Below is a list of community and offical mycroft skills </p>
+
+<div class="skills">
+
+  {% for skill in site.skills %}
+    {% if skill.skill_type == 'official' %}
+    <div class="panel panel-primary">
+      <div class="panel-body">
+        <a class="btn btn-default" href="{{ skill.url | prepend: site.baseurl }}" role="button">{{ skill.title }}</a>
+      </div>
+      <div class="panel-footer panel-primary text-right">Mycroft AI</div>
+    </div>
+    {% else %}
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <a class="btn btn-default" href="{{ skill.url | prepend: site.baseurl }}" role="button">{{ skill.title }}</a>
+      </div>
+      <div class="panel-footer  text-right">{{ skill.author }}</div>
+    </div>
+    {% endif %}
+  {% endfor %}
+
+</div>
