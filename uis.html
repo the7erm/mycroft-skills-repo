@@ -1,0 +1,23 @@
+---
+layout: page
+title: UIs
+permalink: /ui/
+---
+
+<p> Below is a list of community Mycroft user interfaces </p>
+
+<div class="skills">
+
+  {% for ui in site.uis %}
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <p>
+          <a class="btn btn-default" href="{{ ui.url | prepend: site.baseurl }}" role="button">{{ ui.title }}</a>
+          <blockquote>{{ ui.short_description }}</blockquote>
+        </p>
+      </div>
+      <div class="panel-footer  text-right">{{ ui.author }}</div>
+    </div>
+  {% endfor %}
+
+</div>

@@ -20,13 +20,22 @@ markdown: kramdown
 collections:
   skills:
     output: true
-    skill_type: "community"
-    title: ""
-    short_description: ""
-    description: ""
-    author: ""
-    email: ""
-    website: ""
-    twitter_username: ""
-    github_username: ""
-    github_repo: ""
+  uis:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: skills
+    values:
+      layout: page
+      skill_type: community
+      #Add the below properites to your skill file
+      title: ""
+      short_description: ""
+      author: ""
+      email: ""
+      website: ""
+      twitter_username: ""
+      github_username: ""
+      github_repo: ""

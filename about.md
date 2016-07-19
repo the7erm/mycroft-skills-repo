@@ -5,5 +5,3 @@ permalink: /about/
 ---
 
 This is an example site to host a repo of community mycroft ai skills
-
-{% include icon-github.html username="joshymcd" %}
