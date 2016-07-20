@@ -11,3 +11,13 @@ Example Mycroft skills repo site
 6. serve website to localhost:4000 `jekyll serve --watch`
 7. ???
 8. profit
+
+If you get the message
+    Error installing jekyll:
+    jekyll requires Ruby version >= 2.0.0.
+
+Run the following to install.
+```
+sudo apt-get install ruby2.0 ruby2.0-dev
+sudo gem2.0 install jekyll-import
+```
